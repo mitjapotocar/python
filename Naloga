@@ -1,0 +1,16 @@
+i = 0
+z = {}
+while i < 3:
+    a = input("Vnesi stavek")
+    if a[-1] == ';' and sorted(a).count(' ') >= 6:
+        for d in range(len(a)):
+            for u in sorted(a):
+                if u in z:
+                    pass
+                else:
+                    z.update({u: a.count(u)})
+        print(z)
+        break
+    else:
+        i += 1
+        pass
