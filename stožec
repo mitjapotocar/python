@@ -1,0 +1,7 @@
+a1 = int(input("Vnesi število vrstic"))
+b = 1
+r = a1
+for i in range(a1):
+	r -= 1
+	print(int(r)*' ' , b*'#' , int(r)*' ')
+	b+= 2
